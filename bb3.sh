@@ -21,3 +21,19 @@ LEN=3
 echo ${STRING:$POS:$LEN}   # his
 echo ${STRING:$POS}   # his is a string
 
+echo $(expr 5 '*' 5)
+echo $((5 * 5))
+
+isInt='^-?[0-9]+$'
+
+if [ -n "$1" ]; then
+    echo "First argument is $1"
+
+    if [[ $1 =~ $isInt ]]; then
+       echo "It is a number"
+    fi
+else
+    echo "No argument passed"
+fi
+
+
