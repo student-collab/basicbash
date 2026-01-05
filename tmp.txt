@@ -1,0 +1,4 @@
+$ echo "scale=2; 5+0.5" | bc
+(standard_in) 1: syntax error
+$ echo "5+0.5" | bc -l
+(standard_in) 1: syntax error
